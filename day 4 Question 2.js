@@ -1,7 +1,6 @@
-//////////////////// WEBSITE NOT OPENING /////////////////
 var countries = () => {
     var xhr = new XMLHttpRequest;
-    xhr.open("GET","https://restcountries.eu/rest/v2/all");
+    xhr.open("GET","https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json");
     xhr.responseType = "json";
     xhr.onload = () =>{
         const obj = xhr.response;
